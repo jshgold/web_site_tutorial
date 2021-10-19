@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        * {
+            padding: 0;
+            margin: 0 3px;
+            list-style: none;
+            text-decoration: none;
+            background-color: black;
+            color: white;
+            
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            box-sizing: border-box;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header {
+             display: flex;
+             justify-content: space-between;
+             width: 100%;
+             align-items: center;
+             padding: 1.2rem 0;
+        }
+
+        header > p {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        header > ul {
+            display: flex;
+            
+        }
+
+        header > ul >li {
+            margin-left: 1.2rem;
+        }
+
+        header > ul > li > a {
+            font-size: 1.2rem;
+            font-weight: 800;
+            padding-bottom: 5px;
+        }
+
+        header > ul > li:first-child > a {
+            border-bottom: 5px solid white;
+        }
+
+        section {
+            padding: 0 3rem;
+            text-align: center;
+            
+           
+        }
+
+        section > p {
+            margin-bottom: 1rem;
+        }
+
+        .title {
+            font-size : 2rem;
+            font-weight: 900;
+            
+        }
+
+        .content {
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+
+        .more {
+            width: 150px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color:black;
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 1rem;
+            margin: auto;
+            padding: 1rem;
+            cursor:pointer;
+        }
+
+        footer {
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        a:hover {
+            border-bottom : 5px solid rgba(255,255,255,0.8)
+        }
+
+        @media screen and (max-width: 500px){
+
+            header{
+                flex-direction: column;
+            }
+            
+            
+        }
+      
+   
+
+       
+    </style>
+    <div class="container">
+        <header>
+            <p>Cover</p>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <p class="title">Cover your page</p>
+            <p class="content">Cover is a one-page template for building simple and beautiful home
+                pages. Download , edit the text , and add your own fullscreen
+                background photo to make it your own.
+            </p>
+            <p class="more">Learn more</p>
+        </section>
+        <footer>
+            <a href="http://www.naver.com">Cover template for Bootstrap, by @mdo</a>
+        </footer>
+    </div>
+    
+</body>
+</html>
