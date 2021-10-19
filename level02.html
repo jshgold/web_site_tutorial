@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fontello-026ba415/css/fontello-embedded.css">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #eee;
+        }
+        .container {
+            margin: auto;
+            width: 200px;
+            height:100vh;
+            display:flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            
+        }
+
+        header {
+            font-size: 3.5rem;
+            color: rebeccapurple;
+        }
+
+        main {
+            width: 100%;
+            margin: 10px auto 40px;
+        }
+
+        main > p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        main > form > input[placeholder] {
+            font-size: .8rem;
+            width:100%;
+            padding: 8px;
+            border: .5px solid #ddd;
+            outline: none;
+            transition: box-shadow .5s;
+        }
+
+        main input[placeholder]::placeholder{
+            font-size : .8rem;
+        }
+        main input[type="checkbox"]{
+            margin-top: .8rem;
+        }
+    </style>
+
+    
+    <div class="container">
+        <header>
+            <i class="icon-bold"></i>
+
+        </header>
+        <main>
+            <p>Please sign in</p>
+            <form action="#">
+                <input type="email" placeholder="Email address"required></li>
+                <input type="password" placeholder="Password"required></li>
+                <input type="checkbox" name="rem" id="rem" value="">
+                <label for="rem">Remember Email</label>
+                <input type="submit" value="Sign in">
+            </form>
+
+        </main>
+        <footer>
+
+            <p>(C) 2017-2018</p>
+
+        </footer>
+    </div>
+    
+</body>
+</html>
